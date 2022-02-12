@@ -17,9 +17,6 @@ export default function Home() {
         <h2>and i am a <span>frontend developer.</span></h2>
       </div>
       <div className={styles.aboutme}>
-        <section>
-          <h1>About Me</h1>
-        </section>
       </div>
     </div>
   )
