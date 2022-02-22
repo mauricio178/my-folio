@@ -5,17 +5,20 @@
 }
 
 :root {
-    --white: #f2f2f2;
+    --white: #ececec;
 
-    --gray-300: #c2c2c2;
+    --gray-300: #bbbaba;
     --gray-500: #545454;
     --gray-800: #353535;
 
-    --blue-500: #25afff;
+    --black: #1c1c1c;
 
-    --red-700: #9e1313;
+    --primary: #F81545;
+    --secondary: #0E3B56;
 
-    --yellow-300: #e1a716;
+    --red-700: #b90b0b;
+
+    --yellow-300: #ffed00;
 }
 
 @media (max-width: 1080px) {
@@ -33,8 +36,6 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-image: url('/background1.png');
-    background-size: cover;
 }
 
 body,

@@ -1,27 +1,24 @@
 import styles from './styles.module.scss'
 import React from 'react'
-import { FiMenu } from "react-icons/fi";
-import logo from '../../../public/logo.png'
+import logo from '../../../public/3.png'
 import Image from 'next/image'
+import {Button} from "../Button";
 
 
 export function Header() {
-
     return (
         <div className={styles.container}>
-            <div className={styles.left}>
-                <FiMenu size={38}/>
-                <Image src={logo} alt="logo" width={70} height={40}/>
+            <div className={styles.image}>
+                <div>
+                    <Image src={logo} alt="logo" width={40} height={40}/>
+                </div>
+                <p>Mauricio Rodrigues</p>
             </div>
-            <div className={styles.navigation}>
-                <nav>
-                    <ul>
-                        <li>About Me</li>
-                        <li>Portfólio</li>
-                        <li>Contact</li>
-                    </ul>
-                </nav>
-
+            <div className={styles.nav}>
+                <a>Services</a>
+                <a>Work</a>
+                <a>Portfolio</a>
+                <Button title={"Contact"} theme={'secondary'}/>
             </div>
         </div>
     );

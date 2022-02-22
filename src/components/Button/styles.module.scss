@@ -1,0 +1,30 @@
+.container {
+  background: var(--secondary);
+
+  > p {
+    font-size: 1.2rem;
+
+  }
+}
+
+.containerSecondary {
+  background: var(--gray-300);
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+
+  > p {
+    font-size: 1.2rem;
+    color: var(--secondary);
+  }
+
+  &:hover{
+    transition: .3s;
+    cursor: pointer;
+    background: var(--white);
+
+    >p{
+      transition: .3s;
+      color: var(--primary);
+    }
+  }
+}
