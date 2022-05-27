@@ -1,0 +1,60 @@
+.container {
+  overflow-x: hidden;
+
+  .apresentation {
+    background-image: linear-gradient(to bottom, var(--secondary), var(--purple-light));
+    height: 80vh;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 4rem;
+    flex-direction: row;
+
+    .image{
+      padding: .5rem;
+      border: 5px solid var(--purple-light);
+      height: max-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10rem;
+
+      >div{
+        border-radius: 10rem;
+      }
+
+      &:hover{
+        transition: .4s;
+        cursor: pointer;
+        border: 5px solid var(--secondary);
+      }
+    }
+
+    > div {
+      padding: 2rem 4rem;
+
+      > h2, h3 {
+        font-size: 2rem;
+        color: var(--white);
+
+        > span {
+          color: var(--purple-light);
+        }
+      }
+    }
+  }
+
+  .services {
+    background-image: linear-gradient(to bottom, var(--purple-light), var(--primary));
+    height: 80vh;
+  }
+
+  .work {
+    background-image: linear-gradient(to bottom, var(--primary), var(--secondary));
+    height: 80vh;
+  }
+
+  .portfolio {
+    background-image: linear-gradient(to bottom, var(--secondary), var(--white));
+    height: 80vh;
+  }
+}

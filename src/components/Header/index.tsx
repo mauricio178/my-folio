@@ -12,7 +12,6 @@ export function Header() {
                 <div>
                     <Image src={logo} alt="logo" width={40} height={40}/>
                 </div>
-                <p>Mauricio Rodrigues</p>
             </div>
             <div className={styles.nav}>
                 <a>Services</a>

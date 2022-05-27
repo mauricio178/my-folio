@@ -5,7 +5,6 @@ class MyDocument extends Document {
         return (
             <Html>
                 <Head>
-                    <title>MR - blog</title>
                 </Head>
                 <body>
                 <Main/>
