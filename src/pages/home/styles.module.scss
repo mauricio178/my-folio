@@ -1,0 +1,133 @@
+.container {
+  overflow-x: hidden;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 4rem;
+  flex-direction: row;
+
+  .image {
+    padding: 0.5rem;
+    border: 5px solid var(--purple-light);
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rem;
+
+    > div {
+      border-radius: 10rem;
+    }
+
+    &:hover {
+      transition: 0.4s;
+      cursor: pointer;
+      border: 5px solid var(--secondary);
+    }
+
+    @media (max-width: 815px) {
+      display: none;
+    }
+  }
+
+  .imageMobile {
+    display: none;
+  }
+
+  > div {
+    padding: 2rem 4rem;
+
+    > h2,
+    h3 {
+      font-size: 2rem;
+      color: var(--white);
+      font-weight: 100;
+
+      > span {
+        font-weight: 100;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: var(--purple-light);
+      }
+
+      @media (max-width: 715px) {
+        font-size: 1.8rem;
+
+        > span {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    @media (max-width: 815px) {
+      padding: 0 0;
+    }
+  }
+
+  @media (max-width: 815px) {
+    padding: 1rem 2rem;
+    flex-direction: column;
+
+    .imageMobile {
+      margin: 2rem 0;
+      display: flex;
+      justify-content: center;
+      opacity: 0.8;
+    }
+  }
+}
+
+.about {
+  top: 6rem;
+  height: 100vh;
+  border-top: 2px solid var(--purple-light);
+  background-color: #120c56;
+
+
+  > h2 {
+    font-size: 2.5rem;
+    font-weight: 100;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    border-top: 2px solid var(--primary);
+    color: var(--purple-light);
+    width: 60%;
+    margin-top: .5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    padding-left: 2rem;
+    justify-content: flex-start;
+  }
+
+  .cards{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: flex-start;
+
+    >div{
+      width: 45%;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      >svg{
+        font-size: 4rem;
+        color: var(--white);
+
+        &:hover{
+          transition: .3s;
+          color: var(--purple-light);
+        }
+      }
+
+      >p{
+        text-align: center;
+        color: var(--white);
+        font-size: 1.2rem;
+        line-height: 1.2;
+        font-weight: 100;
+      }
+    }
+  }
+}

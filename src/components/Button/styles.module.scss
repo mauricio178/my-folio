@@ -21,10 +21,12 @@
     transition: .3s;
     cursor: pointer;
     background: var(--white);
+    box-shadow: 0 0 7px var(--purple-light);
 
     >p{
       transition: .3s;
-      color: var(--primary);
+      color: var(--purple-light);
+
     }
   }
 }
